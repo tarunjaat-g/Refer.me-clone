@@ -9,6 +9,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
   </head>
   <body>
     <div>
@@ -24,6 +26,9 @@
         <div id="header-button">
           <div id="header-sign-in">Sign in</div>
           <div id="header-sign-up">Sign up</div>
+        </div>
+        <div onclick="sidebaropen()">
+        <i class="fa-solid fa-bars"></i>
         </div>
       </div>
       <div id="marketplace">
@@ -66,6 +71,22 @@
           </div>
         </div>
       </div>
+      <div id="sidebar"  class="sidebar">
+        <a href="">Find Jobs</a><hr>
+        <a href="">Referral Marketplace</a><hr>
+        <a href="">Request Referrals</a><hr>
+        <a href="">Resume Tools</a><hr>
+        <a href="">Pricing</a>
+      </div>
     </div>
+    <script>
+      function sidebaropen() {
+        document.querySelector("#sidebar").classList.toggle('viwe');
+    }
+    
+        window.addEventListener('scroll', function(){
+          document.querySelector('#header').classList.toggle('fix',window.scrollY > 10);
+        })
+    </script>
   </body>
 </html>
