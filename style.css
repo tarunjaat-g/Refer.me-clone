@@ -12,6 +12,9 @@
   align-items: center;
   justify-content: right;
 }
+#header > i {
+  display: none;
+}
 #logo {
   height: 35px;
   width: 35px;
@@ -137,4 +140,95 @@
   width: 40px;
   border: none;
   border-radius: 5px;
+}
+#sidebar {
+  /* display: flex; */
+  flex-direction: column;
+  width: 55vw;
+  gap: 3vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 6.01vh;
+  left: 45vw;
+  padding: 5vh 4vw;
+  height: 94vh;
+  border-left: 1px solid #333;
+  display: none;
+}
+#sidebar .viwe {
+  display: block;
+}
+@media only screen and (min-width: 300px) and (max-width: 567px) {
+  #header {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    gap: 22vw;
+    height: 6vh;
+    align-items: center;
+    justify-content: right;
+    z-index: 999;
+    background-color: white;
+  }
+  #header .fix {
+    position: fixed;
+  }
+  #header > i {
+    display: block;
+  }
+  #header-cantent {
+    display: none;
+  }
+  #marketplace {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 5px 5vw;
+    text-align: center;
+  }
+  #header-sign-up {
+    display: none;
+  }
+  #header-sign-in {
+    display: none;
+  }
+  #center-content {
+    flex-direction: column;
+    height: 140vh;
+    width: 100vw;
+  }
+  #refer {
+    width: 100vw;
+    padding: 3vw;
+    text-align: center;
+    align-items: center;
+  }
+  #compney {
+    width: 100vw;
+    padding: 10vh 3vw;
+  }
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    gap: 3vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 6.01vh;
+    left: 45vw;
+    padding: 5vh 4vw;
+    height: 94vh;
+    border-left: 1px solid #333;
+    display: none;
+  }
+  #sidebar > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  .viwe {
+    display: block;
+  }
 }
